@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+}
+
+.status {
+    margin-left:.5em;
+}
+
+.status.red {
+    background-color: red;
+}
+
+.status.gray {
+    background-color: gray;
+}
