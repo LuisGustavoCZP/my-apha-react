@@ -105,7 +105,8 @@ function Home ()
         React.createElement("h1", null, "Rick and Morty on React"),
         React.createElement("span", {id:"episode", class:"episode"},
             React.createElement("label", {class:"episode", for:"input-episode"}, "Episodio"),
-            React.createElement("input", {id:"input-episode", type:"number", class:"episode", placeholder:"Insira aqui um numero de episódio", onChange:(e) => loadcards(e.target.value)})
+            React.createElement("input", {id:"input-episode", type:"number", class:"episode", placeholder:"Insira aqui um numero de episódio"}),
+            React.createElement("button", {id:"input-submit", type:"submit", class:"episode", onClick:(e) => loadcards(document.getElementById("input-episode").value)}, "Confirmar")
         )
     ));
     if(!loaded)
