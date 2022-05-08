@@ -74,9 +74,10 @@ header > .episode {
     padding: 20px;
 }
 
-header > .episode > input {
+header > .episode > input[type="text"] {
     margin-left: 10px;
     text-align: center;
+    background-color: var(--mainColor3);
 }
 
 .Home {
