@@ -70,9 +70,11 @@ header > h1 {
 header > .episode {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 80%;
     padding: 20px;
     font-size: 1.3em;
+    text-align: center;
 }
 
 header > .episode > input[type="number"], textarea {
@@ -80,7 +82,17 @@ header > .episode > input[type="number"], textarea {
     text-align: center;
     background-color: var(--subColor2);
     color: var(--backColor);
-    font-size: .9em;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+header > .episode > button[type="submit"] {
+    margin-left: 5px;
+    padding: 3px;
+    text-align: center;
+    background-color: var(--subColor2);
+    color: var(--backColor);
+    font-size: .8em;
     font-weight: bolder;
 }
 
