@@ -71,7 +71,7 @@ header > span.episode {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 80%;
     padding: 20px;
     font-size: 1.3em;
     text-align: center;
@@ -79,7 +79,7 @@ header > span.episode {
 
 header > .episode > input[type="number"], textarea {
     display: flex;
-    width: 40%;
+    width: 5em;
     margin-left: 10px;
     text-align: center;
     background-color: var(--subColor2);
