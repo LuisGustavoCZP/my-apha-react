@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+:root {
+    --backColor:hsl(96, 10%, 30%);
+    --mainColor:hsl(96, 50%, 60%);
+    --mainColor2:hsl(216, 10%, 60%);
+    --mainColor3:hsl(336, 50%, 60%);
+    --subColor:hsl(96, 80%, 60%);
+    --subColor2:hsl(96, 50%, 90%);
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    
+    
+}
+
+#root {
+    display: flex;
+   /*  flex-grow: 1; */
+    width: 100%;
+    height: 100%;
+    background-color: hsl(208, 10%, 20%);
+    /* position: relative; */
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 10px);
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    background-color: hsl(208, 10%, 20%);
+    color:var(--subColor2);
+    padding-top: 20px;
+    /* //color: #000; */
+}
+
+header > h1 {
+    text-align: center;
+    color:var(--subColor2);
+    text-shadow: 0px 0px 20px var(--subColor);
+}
+
+header > span.episode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+header > .episode > input[type="number"], textarea {
+    display: flex;
+    width: 5em;
+    margin-left: 10px;
+    text-align: center;
+    background-color: var(--subColor2);
+    color: var(--backColor);
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+header > .episode > button[type="submit"] {
+    margin-left: 5px;
+    padding: 3px;
+    text-align: center;
+    background-color: var(--subColor2);
+    color: var(--backColor);
+    font-size: .8em;
+    font-weight: bolder;
+}
+
+.Home {
+    display: flex;
+    width: 100%;
+    height: calc(100%);
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.empty/* , .load */ {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    flex-grow: 1;
+    background-color: var(--backColor);
+}

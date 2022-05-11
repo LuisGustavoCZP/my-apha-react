@@ -1,5 +1,6 @@
-import LoadRing from "./LoadRing.js";
 import Card from "./Card.js"
+import LoadRing from "./LoadRing.js"
+
 const { useState, useEffect } = React;
 
 let search = "";
@@ -117,7 +118,7 @@ function Home ()
             texts.push(React.createElement("h2", {class:"empty"}, "Você pode precisa escolher um episodio!"));
         else 
         {
-            texts.push(React.createElement(LoadRing));
+            texts.push(React.createElement(LoadRing, null));
         }
 
         els.push(React.createElement("div", {id:"home", class:"Home"}, texts));
