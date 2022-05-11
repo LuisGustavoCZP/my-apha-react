@@ -9,13 +9,14 @@ const species = {
     "Robot":"Robô",
     "Mythological Creature":"Criatura Mitológica",
     "Alien":"Alienigena",
-    "unknown":"Desconhecido"
+    "unknown":"Coisa",
+    "Disease":"Doença"
 };
 
 const genders = {
     "Female":"Fêmea",
     "Male":"Macho",
-    "unknown":"Desconhecido",
+    "unknown":"",
     "Genderless":"Assexuado"
 }
 
