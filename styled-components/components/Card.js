@@ -97,8 +97,8 @@ function Card(props)
     let specie = species[character.species];
     if(!specie) specie = character.species;
 
-    const gender = genders[character.gender];
-    if(!gender) gender = character.gender;
+    let gender = genders[character.gender];
+    if(gender != "" && !gender) gender = character.gender;
 
     parts.push(React.createElement(CardInfo, { title:'', info:`${specie} ${gender}`}));
     
