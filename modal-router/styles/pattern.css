@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+body {
+    display: flex;
+    width: calc(100vw - 16px);
+    height: calc(100vh - 16px);
+    background-color: black;
+}
+
+body > div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+header > div
+{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    color: white;
+}
+
+#me {
+    width: min-content;
+    height: min-content;
+    background-color: white;
+    color: black;
+    font-family: 'Abril Fatface', cursive;
+    border: 1px solid hsl(0, 0%, 15%);
+}
+
+.photo {
+    display: flex;
+    position: relative;
+    width: 75%;
+    height: 75%;
+    pointer-events: none;
+    user-select: none;
+}
+
+.photo > div {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.photo > img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.tagtext {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em;
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+#me .tagtext > span:nth-child(1) {
+    font-size: .65em;
+    text-align: center;
+}
+
+#me .tagtext > span:nth-child(2) {
+    line-height: .4em;
+    font-size: 2em;
+}
+
+.tagtext {
+    line-height: 1.05em;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.tagtext > span:nth-child(1) {
+    font-size: 1em;
+}
+
+.tagtext > span:nth-child(2) {
+    font-size: 2em;
+}
+
+#about .tagtext {
+    line-height: .6em;
+}
+
+#about .tagtext > span:nth-child(1) {
+    font-size: 50%;
+}
+
+#about .tagtext > span:nth-child(2) {
+    font-size: 100%;
+}
+
+#menu {
+    display: flex;
+}
+
+#menu > ul {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0;
+    justify-content: start;
+    align-items: flex-start;
+    background-color: hsl(0, 0%, 15%);
+    font-size: 2em;
+    padding: 1px 1px 0px 1px;
+    margin: 0;
+}
+
+#menu > ul > li {
+    display: flex;
+    width: 100%;
+    user-select: none;
+    background-color: hsl(0, 0%, 100%);
+    margin-bottom: 2px;
+}
+
+#menu > ul > li:hover {
+    background-color: hsl(0, 0%, 20%);
+}
+
+#menu > ul > li:active {
+    background-color: hsl(0, 0%, 40%);
+}
+
+#menu > ul > li > * {
+    display: flex;
+    flex-grow: 1;
+    color:hsl(0, 0%, 0%);
+    justify-content: center;
+    -webkit-user-drag: none;
+    font-family: 'Acme', sans-serif;
+}
+
+button {
+    font-size: 1em;
+    background-color: hsl(260, 25%, 90%);
+}
+
+#menu > ul > li > *:active {
+    color:hsl(0, 0%, 100%);
+}
+
+#menu > ul > li > *:hover {
+    color:hsl(0, 0%, 30%);
+}
+
+#menu > ul > li > *:visited {
+    color:hsl(0, 0%, 0%);
+}
+
+.content {
+
+}
+
+main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 80%);
+    color:hsl(0, 0%, 20%);
+    margin: 1px;
+}
+
+main > div {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0.5%;
+}
+
+main > div > h3 {
+    font-size: 6em;
+    margin: 0;
+    text-align: center;
+    background-color: hsl(0, 0%, 20%);
+    color:hsl(0, 0%, 80%);
+    font-family: 'My Soul', cursive;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsla(260, 25%, 25%, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    width: 50%;
+    height: 30%;
+    background-color: hsl(260, 25%, 90%);
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header, .modal-footer {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: hsla(260, 25%, 25%, .6);
+    color: hsl(260, 25%, 90%);
+}
+
+.modal-title {
+    margin: 0;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 10px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
